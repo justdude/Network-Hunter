@@ -20,20 +20,19 @@ public class LoginGUI : MonoBehaviour {
 	
 	void OnGUI() {
 		if(!enabled) return; 
-		
-	    //GUI.skin.font = myFont;                 //задаем шрифт
-	    GUILayout.BeginArea(new Rect(Screen.width / 2 - 150, 
-	      Screen.height / 2 - 150, 300, 300), "", "box");   //рисуем область отображения
+
+		GUI.skin.font = (Font)Resources.Load("robust-icg", typeof(Font));// myFont;  //задаем шрифт
+	    GUILayout.BeginArea(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 150, 300, 300), "", "box");   //рисуем область отображения
 		
 		    GUILayout.BeginVertical();               //начинаем вертикальную группу
-		
-			    GUILayout.Label("Адрес сервера");            //далее идут пары Label+TextField для считывания данных
+
+				GUILayout.Label("Server address:");   //далее идут пары Label+TextField для считывания данных
 			    serverName = GUILayout.TextField(serverName);
 			
-			    GUILayout.Label("Порт сервера");
+			    GUILayout.Label("Server port:");
 			    serverPort = (GUILayout.TextField(serverPort));
 			
-			    GUILayout.Label("Имя пользователя");
+			    GUILayout.Label("Username:");
 			    username = GUILayout.TextField(username, 24);
 			
 			   /* GUILayout.Label("Пароль пользователя");
@@ -43,7 +42,7 @@ public class LoginGUI : MonoBehaviour {
 			
 			    if (serverName != "" && serverPort != "") {
 			
-			      if (GUILayout.Button("Соединиться")) {
+			      if (GUILayout.Button("Connect")) {
 					string error = SmartFoxHandler.Instance.Connect(serverName,
 																	int.Parse(serverPort),
 																	username
