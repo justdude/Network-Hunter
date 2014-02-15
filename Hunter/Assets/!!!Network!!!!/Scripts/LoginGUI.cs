@@ -12,6 +12,7 @@ public class LoginGUI : MonoBehaviour {
 	public string password = "123";
 	
 	private bool enabled = false;
+	private bool isLoading = false;
 	
 	void Start () {
 		enabled = true;
@@ -49,8 +50,10 @@ public class LoginGUI : MonoBehaviour {
 																	);
 					Debug.Log(error);
 			      }
-				if (SmartFoxHandler.Instance.IsJoinned) 
+				if (SmartFoxHandler.Instance.IsJoinned && !isLoading) 
 				{
+					isLoading = true;
+					print("loading");
 					Application.LoadLevel(NextLevelNumber);
 				}
 			
@@ -64,6 +67,10 @@ public class LoginGUI : MonoBehaviour {
 	
 	private void Update()
 	{
+		//Test chat
+		if (SmartFoxHandler.Instance.IsJoinned) 
+			SmartFoxHandler.Instance.SendAll("Hello guys");
+		
 		SmartFoxHandler.Instance.ProcessEvents();
 	}
 	

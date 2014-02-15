@@ -47,7 +47,13 @@ public class SmartFoxHandler  {
 	public SmartFoxHandler()
 	{
 		sfs = new SmartFox();
-		sfs.ThreadSafeMode = true;
+		sfs.ThreadSafeMode = false;
+	}
+	
+	 ~SmartFoxHandler()
+	{
+		if (sfs!=null && sfs.IsConnected)
+		this.Disconnect();
 	}
 	
 	private void InitListiners()
@@ -211,6 +217,11 @@ public class SmartFoxHandler  {
 	    }
 	
 	  }
+	
+	public void SendAll(string text)
+	{
+		sfs.Send(new PublicMessageRequest(text));
+	}
 
 	///EVENTS
 	
