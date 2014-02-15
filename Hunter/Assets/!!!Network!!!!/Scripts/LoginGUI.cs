@@ -51,7 +51,7 @@ public class LoginGUI : MonoBehaviour {
 			      }
 				if (SmartFoxHandler.Instance.IsJoinned) 
 				{
-					Application.LoadLevel(2);
+					Application.LoadLevel(NextLevelNumber);
 				}
 			
 			    }
