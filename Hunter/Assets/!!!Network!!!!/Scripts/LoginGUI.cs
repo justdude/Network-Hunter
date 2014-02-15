@@ -65,7 +65,7 @@ public class LoginGUI : MonoBehaviour {
 	
 	  }
 	
-	private void Update()
+	private void FixedUpdate()
 	{
 		//Test chat
 		if (SmartFoxHandler.Instance.IsJoinned) 
