@@ -40,9 +40,9 @@ public class MouseLook : MonoBehaviour {
 			{
 				// Invert mouse Y if set
 				int mouseYFactor = 1;
-				if (OptionsManager.InvertMouseY) {
+/*				if (OptionsManager.InvertMouseY) {
 					mouseYFactor = -1;
-				}
+				}*/
 				
 				// Read the mouse input axis
 				rotationX += Input.GetAxis("Mouse X") * sensitivityX;
