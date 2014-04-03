@@ -38,7 +38,7 @@ public class PlayerManager : MonoBehaviour {
 
 	public void SpawnItem(int id, NetworkTransform ntransform, string itemType) {
 		GameObject itemPrefab = null;
-		
+        return;
 		if (itemType == "Ammo") {
 			itemPrefab = ammoPrefab;
 		}
