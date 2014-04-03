@@ -1,15 +1,19 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Camera Scripts\MouseLook.cs">
-    <Files>
-      <File FileName="Assets\Standard Assets\Camera Scripts\MouseLook.cs" Line="1" Column="1" />
-=======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Menu\LoginGUI.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\sfs\Game\Scripts\PlayerManager.cs">
     <Files>
-      <File FileName="Assets\Menu\LoginGUI.cs" Line="48" Column="27" />
->>>>>>> origin/develop
+      <File FileName="Assets\sfs\Game\Scripts\AnimationSynchronizer.cs" Line="1" Column="1" />
+      <File FileName="Assets\sfs\Game\Scripts\WalkController.cs" Line="1" Column="1" />
+      <File FileName="Assets\sfs\Game\Scripts\NetworkTransform.cs" Line="1" Column="1" />
+      <File FileName="Assets\sfs\Game\Scripts\PlayerManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\sfs\Game\Scripts\NetworkManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\sfs\Game\Scripts\NetworkTransformReceiver.cs" Line="1" Column="1" />
+      <File FileName="Assets\sfs\Lobby\Scripts\LoginGUI.cs" Line="1" Column="1" />
+      <File FileName="Assets\sfs\Lobby\Scripts\SmartFoxConnection.cs" Line="1" Column="1" />
+      <File FileName="Assets\sfs\Game\Scripts\GameHUD.cs" Line="1" Column="1" />
+      <File FileName="Assets\sfs\Game\Scripts\SoundManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\sfs\Game\Scripts\TimeManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\sfs\Game\Scripts\NetworkTransformInterpolation.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
